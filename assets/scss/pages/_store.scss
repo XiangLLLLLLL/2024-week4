@@ -1,0 +1,86 @@
+.container{
+    padding: 80px 0;
+    @include mobile-large{
+        padding: 40px 0;
+    }
+}
+.store-title{
+    color: #000;
+    margin-bottom: 40px;
+    h1{
+        font-size: 48px;
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+        margin-bottom: 32px;
+    }
+    p{
+        margin-right: 16px;
+    }
+    select{
+        width: 304px;
+    }
+    @include mobile{
+        margin-bottom: 24px;
+        h1{
+            font-size: 24px;
+        }
+        p{
+            font-size: 16px;
+            margin-right: 8px;
+        }
+        select{
+            width: 263px;
+        }
+    }
+}
+.store-list{
+    color: #000;
+    .row{
+        display: flex;
+        margin-right: -12px;
+        margin-left: -12px;
+    }
+    &-card{
+        display: flex;
+        flex-wrap: wrap;
+        a{
+            text-align: center;
+            padding: 16px;
+            width: 100%;
+            background: #000;
+            color:#FFFFFF;
+            &:hover{
+                background: gray;
+            }
+        }
+    }
+    h2{
+        font-size: 24px;
+        padding: 8px 0;
+        border: 1px solid #00000020;
+        padding-left: 24px;
+    }
+    .store-icon-group{
+        border: 1px solid #00000020;
+    }
+    .store-icon{
+        padding: 16px 24px;
+        display: flex;
+        img{
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .mb-store{
+        margin-bottom: 48px;
+    }
+    @include mobile{
+        .mb-store{
+            margin-bottom: 24px;
+        }
+    }
+}

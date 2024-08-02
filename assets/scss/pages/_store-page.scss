@@ -1,0 +1,94 @@
+.container{
+    padding: 80px 0;
+    @include mobile-large{
+        padding: 40px 0;
+    }
+}
+.storepage-title{
+    color: #000;
+    margin-bottom: 40px;
+    h1{
+        font-size: 48px;
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+        margin-bottom: 32px;
+    }
+    p{
+        font-size: 24px;
+        margin-right: 16px;
+    }
+    select{
+        width: 304px;
+    }
+    @include mobile{
+        margin-bottom: 24px;
+        h1{
+            font-size: 24px;
+        }
+        p{
+            font-size: 16px;
+            margin-right: 8px;
+        }
+        select{
+            width: 262px;
+        }
+    }
+}
+.storepage-list{
+    color: #000;
+    .row{
+        display: flex;
+        margin-right: -12px;
+        margin-left: -12px;
+    }
+    &-card{
+        display: flex;
+        flex-wrap: wrap;
+        @include pad{
+            flex-direction:column;
+        }
+    }
+    h2{
+        font-size: 24px;
+        padding: 7px 0;
+        border: 1px solid #00000020;
+        padding-left: 24px;
+    }
+    .store-icon-group{
+        border: 1px solid #00000020;
+        padding: 15px 24px;
+    }
+    .store-icon{
+        display: flex;
+        img{
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    @include pad{
+        .storepage-list-pdcard{
+            display: flex;
+            margin-bottom: 24px;
+            margin-right: -12px;
+            margin-left: -12px;
+        }
+        img{
+            height: 100%;
+        }
+    }
+    @include mobile{
+        .mb-storepage{
+            margin-bottom: 24px;
+        }
+        .storepage-list-pdcard{
+            display:block;
+        }
+        img{
+            height: 208px;
+        }
+    }
+}

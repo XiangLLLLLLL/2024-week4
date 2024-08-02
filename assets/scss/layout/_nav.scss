@@ -1,0 +1,52 @@
+.nav{
+    background: #FFFFFF;
+    color:#000;
+    &-container{
+        max-width: 1320px;
+        margin: 0 auto;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    .row{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    li{
+        border: 1px solid #DCDCDC;
+        &:hover{
+            border-bottom: 8px solid $primary;
+        }
+    }
+    a{
+        width: 100%;
+        padding: 24px 0;
+        font-size: 32px;
+    }
+    &-card{
+        display: flex;
+        text-align: center;
+    }
+    @include pad{
+        &-container{
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        .row{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .col-12{
+            padding-right: 0;
+            padding-left: 0;
+        }
+        a{
+            padding: 16px 0;
+            font-size: 24px;
+    }
+}   
+    @include mobile{
+        a{
+            font-size: 16px;
+        }
+    }
+}
